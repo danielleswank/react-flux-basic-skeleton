@@ -1,7 +1,7 @@
-Record Shelf
+Basic App
 ===
 
-React app that displays records on shelves. Loads default data from http://localhost:3000/js/record-shelf.json.
+React app that displays data in buckets. Loads default data from json.
 
 Running the app
 ---
