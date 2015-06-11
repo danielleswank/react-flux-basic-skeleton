@@ -1,0 +1,34 @@
+{
+  "name": "record-store",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Record Store",
+  "main": "server.js",
+  "dependencies": {
+    "es6-promise": "^2.2.0",
+    "keymirror": "^0.1.1",
+    "lodash": "^3.9.3",
+    "object-assign": "^3.0.0",
+    "react": "^0.13.3",
+    "zepto-browserify": "^1.1.6-1"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.2",
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "danielleswank",
+  "homepage": "https://danielleswank.com",
+  "engines": {
+    "node": "0.12.x"
+  }
+}

@@ -1,0 +1,100 @@
+{
+    "recordshelf": [
+        {
+            "title": "Shelf 1",
+            "id": "s1",
+            "records": [
+                {
+                    "title": "Venice",
+                    "asin": "5bce337a-f2bd-44a5-94f1-e9280f271fb8",
+                    "artist": "Fennesz",
+                    "genre": "Classical"
+                },
+                {
+                    "title": "The Raincoats",
+                    "asin": "4454b40b-67bd-4983-ad76-73c3a3ddc6be",
+                    "artist": "The Raincoats",
+                    "genre": "Rock"
+                },
+                {
+                    "title": "Imaginary Friend",
+                    "asin": "6d7c0fc1-9f2a-4d20-854b-7350266667df",
+                    "artist": "The Faith Healers",
+                    "genre": "Rock"
+                }
+            ]
+        },
+        {
+            "title": "Shelf 2",
+            "id": "s2",
+            "records": [
+                {
+                    "title": "Jane 1-11",
+                    "asin": "38948096-45a7-4ef4-847c-52c2667955ba",
+                    "artist": "Harold Budd",
+                    "genre": "Classical"
+                },
+                {
+                    "title": "Fielding",
+                    "asin": "8e05bc20-aaa7-454e-8d41-050f08d5e0d7",
+                    "artist": "Hala Strana",
+                    "genre": "Folk"
+                }
+            ]
+        },
+        {
+            "title": "Shelf 3",
+            "id": "s3",
+            "records": [
+                {
+                    "title": "Colossal Youth",
+                    "asin": "940bc7a2-2591-4365-96a3-17649c61c201",
+                    "artist": "Young Marble Giants",
+                    "genre": "Rock"
+                },
+                {
+                    "title": "Shoulder Voices",
+                    "asin": "fcc13c59-5fcf-4ed3-9c17-e4e158705b40",
+                    "artist": "Rollerskate Skinny",
+                    "genre": "Rock"
+                },
+                {
+                    "title": "Dialogue",
+                    "asin": "8737c73f-fbc1-4c21-a394-0d7dfdae0d74",
+                    "artist": "Bobby Hutcherson",
+                    "genre": "Jazz"
+                }
+            ]
+        },
+        {
+            "title": "Shelf 4",
+            "id": "s4",
+            "records": [
+                {
+                    "title": "Sounds of Defiance",
+                    "asin": "75e37e5b-a13b-471f-b75d-ba8fddf8c93a",
+                    "artist": "Yevgeny Kutik",
+                    "genre": "Classical"
+                },
+                {
+                    "title": "Laughing Stock",
+                    "asin": "51f1f101-b969-48cc-b8ef-0f89b568aeb5",
+                    "artist": "Talk Talk",
+                    "genre": "Rock"
+                },
+                {
+                    "title": "After The Dance",
+                    "asin": "59f71115-ed0a-44de-b045-7720b8c19f16",
+                    "artist": "Bert Jansch and John Renbourn",
+                    "genre": "Folk"
+                },
+                {
+                    "title": "Out To Lunch",
+                    "asin": "59f71115-ed0a-44de-b045-7720b8c19f16",
+                    "artist": "Eric Dolphy",
+                    "genre": "Jazz"
+                }
+            ]
+        }
+    ]
+}
