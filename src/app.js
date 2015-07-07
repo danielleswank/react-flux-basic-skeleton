@@ -1,10 +1,10 @@
 var React = require('react');
-var RecordShelfApp = require('./components/RecordShelfApp');
+var ColorApp = require('./components/ColorApp');
 var APIUtils = require('./utils/APIUtils');
 
 React.render(
-  <RecordShelfApp />,
+  <ColorApp />,
   document.getElementById('content')
 );
 
-APIUtils.getData();
+APIUtils.getHistory();

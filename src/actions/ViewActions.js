@@ -1,57 +1,26 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var APIUtils = require('../utils/APIUtils');
 
-var ViewActions = {
-
-  createRecord: function(data) {
+var ColorActions = {
+  loadHistory: function(current, schemes) {
     AppDispatcher.dispatch({
-      actionType: 'CREATE_RECORD',
-      data: data
-    });
-  },
-
-  updateRecord: function(data) {
-    AppDispatcher.dispatch({
-      actionType: 'UPDATE_RECORD',
-      data: data
-    });
-  },
-
-  removeRecord: function(id, shelfId) {
-    AppDispatcher.dispatch({
-      actionType: 'REMOVE_RECORD',
+      actionType: 'LOAD_COLORSCHEMES',
       data: {
-       id: id,
-       shelfId: shelfId
+        current: current,
+        schemes: schemes
       }
     });
   },
 
-  updateShelves: function(data) {
+  addColorScheme: function(color, scheme) {
+    console.log('addColorScheme');
     AppDispatcher.dispatch({
-      actionType: 'UPDATE_SHELVES',
-      data: data
-    });
-  },
-
-  moveRecord: function(recordId, fromShelfId, toShelfId, index) {
-    AppDispatcher.dispatch({
-      actionType: 'MOVE_RECORD',
+      actionType: 'ADD_COLORSCHEME',
       data: {
-        recordId: recordId,
-        fromShelfId: fromShelfId,
-        toShelfId: toShelfId,
-        index: index
+        color: color,
+        scheme: scheme
       }
     });
-  },
-
-  reset: function() {
-    AppDispatcher.dispatch({
-      actionType: 'RESET'
-    });
-    APIUtils.getDefaultData();
   },
 };
 
-module.exports = ViewActions;
+module.exports = ColorActions;

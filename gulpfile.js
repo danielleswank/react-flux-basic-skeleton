@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var source = require('vinyl-source-stream'); // Used to stream bundle for further handling
+var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var watchify = require('watchify');
 var reactify = require('reactify');
@@ -7,27 +7,25 @@ var concat = require('gulp-concat');
 
 gulp.task('browserify', function() {
     var bundler = browserify({
-        entries: ['./src/app.js'], // Only need initial file, browserify finds the deps
-        transform: [reactify], // We want to convert JSX to normal javascript
-        debug: true, // Gives us sourcemapping
-        cache: {}, packageCache: {}, fullPaths: true // Requirement of watchify
+        entries: ['./src/app.js'],
+        transform: [reactify],
+        debug: true,
+        cache: {}, packageCache: {}, fullPaths: true
     });
     var watcher  = watchify(bundler);
 
     return watcher
-    .on('update', function () { // When any files update
+    .on('update', function () {
         var updateStart = Date.now();
         console.log('Updating!');
-        watcher.bundle() // Create new bundle that uses the cache for high performance
+        watcher.bundle()
         .pipe(source('app.js'))
         .pipe(gulp.dest('./build/js/'));
         console.log('Updated!', (Date.now() - updateStart) + 'ms');
     })
-    .bundle() // Create the initial bundle when starting the task
+    .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js/'));
 });
 
-
-// Just running the two tasks
 gulp.task('default', ['browserify']);

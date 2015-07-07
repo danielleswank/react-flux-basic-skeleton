@@ -1,16 +1,14 @@
 {
-  "name": "record-store",
+  "name": "color-explorer",
   "version": "0.0.0",
   "private": true,
-  "description": "Record Store",
+  "description": "Color Explorer",
   "main": "server.js",
   "dependencies": {
     "es6-promise": "^2.2.0",
-    "keymirror": "^0.1.1",
     "lodash": "^3.9.3",
     "object-assign": "^3.0.0",
-    "react": "^0.13.3",
-    "zepto-browserify": "^1.1.6-1"
+    "react": "^0.13.3"
   },
   "devDependencies": {
     "browserify": "^10.2.4",

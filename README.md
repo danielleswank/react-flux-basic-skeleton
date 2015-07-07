@@ -1,7 +1,13 @@
 Basic App
 ===
 
-React app that displays data in buckets. Loads default data from json.
+React/Flux app that displays a user-entered color.
+
+**Features**
+* Persistant state (localStorage)
+* Pallet generation from color
+* Takes rba, rgba, hex and string colors
+
 
 Running the app
 ---
